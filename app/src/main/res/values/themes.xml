@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PUSH" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/background_beige</item>
+        <item name="colorPrimaryVariant">@color/card_beige</item>
+        <item name="colorOnPrimary">@color/interactive_blue</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/interactive_blue</item>
+        <item name="colorSecondaryVariant">@color/interactive_blue</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="fontFamily">@font/rosarioreg</item>
+        <item name="android:fontFamily">@font/rosarioreg</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/background_beige</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

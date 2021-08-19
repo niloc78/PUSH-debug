@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RippleBackground">
+        <attr name="rb_color" format="color" />
+        <attr name="rb_strokeWidth" format="dimension"/>
+        <attr name="rb_radius" format="dimension"/>
+        <attr name="rb_duration" format="integer"/>
+        <attr name="rb_rippleAmount" format="integer"/>
+        <attr name="rb_scale" format="float"/>
+        <attr name="rb_type" format="enum">
+            <enum name="fillRipple" value="0"/>
+            <enum name="strokeRipple" value="1"/>
+        </attr>
+    </declare-styleable>
+<!--    <declare-styleable name="RipplePulseLayout">-->
+<!--        <attr name="rippleColor" format="color"></attr>-->
+<!--        <attr name="rippleType" format="enum">-->
+<!--            <enum name="fill" value="0"></enum>-->
+<!--            <enum name="stroke" value="1"></enum>-->
+<!--        </attr>-->
+<!--        <attr name="startRadius" format="dimension"></attr>-->
+<!--        <attr name="endRadius" format="dimension"></attr>-->
+<!--        <attr name="duration" format="integer"></attr>-->
+<!--        <attr name="strokeWidth" format="dimension"></attr>-->
+<!--    </declare-styleable>-->
+</resources>

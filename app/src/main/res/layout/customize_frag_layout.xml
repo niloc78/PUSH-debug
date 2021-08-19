@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_beige">
+
+    <TextView
+        android:id="@+id/customize_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="43dp"
+        android:textColor="@color/black"
+        android:text="Customize"
+        android:fontFamily="@font/rosarioreg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:text="Tinker with advanced options"
+        android:fontFamily="@font/rosarioreg"
+        android:alpha=".36"
+        app:layout_constraintLeft_toLeftOf="@id/customize_text"
+        app:layout_constraintTop_toBottomOf="@id/customize_text"
+        android:layout_marginLeft="1dp"
+        android:id="@+id/tinker_with_advanced_options"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias=".4"
+        android:id="@+id/guideline_customize1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:textColor="@color/black"
+        android:textAppearance="@style/regtext"
+        android:text="Add to text"
+        app:layout_constraintLeft_toLeftOf="@id/customize_text"
+        app:layout_constraintTop_toBottomOf="@+id/customize_text"
+        app:layout_constraintBottom_toTopOf="@id/guideline_customize1"
+        app:layout_constraintVertical_bias=".2"
+        android:id="@+id/add_to_text"
+        />
+
+
+    <CheckBox
+        android:id="@+id/location_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:buttonTint="@color/interactive_blue"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/add_to_text"
+        app:layout_constraintLeft_toLeftOf="@id/add_to_text"/>
+    <CheckBox
+        android:id="@+id/time_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textSize="25sp"
+        android:buttonTint="@color/interactive_blue"
+        app:layout_constraintTop_toBottomOf="@id/location_check_box"
+        app:layout_constraintLeft_toLeftOf="@id/location_check_box"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:textColor="@color/black"
+        android:textAppearance="@style/regtext"
+        android:text="Current message"
+        app:layout_constraintLeft_toLeftOf="@id/customize_text"
+        app:layout_constraintTop_toBottomOf="@id/guideline_customize1"
+        app:layout_constraintVertical_bias=".2"
+        android:id="@+id/current_message"
+        />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="360dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/card_beige"
+        app:strokeWidth="0.5dp"
+        app:strokeColor="@color/border_grey"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toBottomOf="@id/current_message"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editmessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Send help!! I'm trapped under a building!!"
+                android:maxLines="5"
+                android:maxLength="70"
+                android:textAppearance="@style/regtext"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:id="@+id/address_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha=".5"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="\n"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@id/editmessage"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/edit_message_button"
+            android:src="@drawable/feather_edit"
+            app:maxImageSize="30dp"
+            android:clickable="true" />
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

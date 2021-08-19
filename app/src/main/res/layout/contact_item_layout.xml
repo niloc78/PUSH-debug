@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/contact_image"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#D1D1D1"
+        app:civ_shadow_radius="4dp"
+        app:civ_circle_color="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:civ_border_width="0dp"
+        app:civ_shadow_gravity="bottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@android:color/transparent"
+        tools:ignore="MissingClass"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:autoSizeTextType="uniform"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="27sp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="27sp"
+        app:layout_constraintTop_toTopOf="@id/contact_image"
+        app:layout_constraintStart_toEndOf="@id/contact_image"
+        app:layout_constraintBottom_toTopOf="@id/contact_phone"
+        android:text="Luffy"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/contact_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:autoSizeTextType="uniform"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeMaxTextSize="16sp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toBottomOf="@id/contact_image"
+        app:layout_constraintStart_toStartOf="@id/contact_name"
+        app:layout_constraintTop_toBottomOf="@id/contact_name"
+        android:text="(123) 456 789"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

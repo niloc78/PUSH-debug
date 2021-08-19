@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/contacts_icon"
+            android:icon="@drawable/contacts_icon_selector"
+            android:title="contacts_icon" />
+
+        <item
+            android:id="@+id/message_icon"
+            android:icon="@drawable/chat_bubble_selector"
+            android:title="message_icon" />
+        <item
+            android:id="@+id/alert_icon"
+            android:icon="@drawable/alert_icon_selector"
+            android:title="alert_icon" />
+
+    </group>
+
+</menu>

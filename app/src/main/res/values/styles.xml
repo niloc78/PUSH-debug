@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AlertButtonShape" parent="">
+        <item name="android:shape">ring</item>
+        <item name="android:innerRadius">0dp</item>
+        <item name="cornerSize">50%</item>
+        <item name="cardCornerRadius">111dp</item>
+    </style>
+
+    <style name="regtext" parent="">
+        <item name="fontFamily">@font/rosariolight</item>
+    </style>
+    <style name="navbar" parent="Theme.MaterialComponents">
+        <item name="elevation">0dp</item>
+        <item name="itemIconSize">30dp</item>
+        <item name="labelVisibilityMode">unlabeled</item>
+    </style>
+
+
+</resources>
