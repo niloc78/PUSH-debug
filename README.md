@@ -19,3 +19,9 @@
 3. PUSH will send one SMS message every 30 seconds to your emergency contacts by priority based on how you ordered them in the list.
 4. Once PUSH has reached the end of the list, it will repeat and restart from the top of the list until the user has pressed the cancel button and confirmed that they want to stop the service.
 5. The service will also stop if the app is removed from the background tasks by the use
+
+
+
+https://user-images.githubusercontent.com/74882830/130698595-4bb01f9a-601c-46b4-8320-836ea007daa2.mp4
+
+
